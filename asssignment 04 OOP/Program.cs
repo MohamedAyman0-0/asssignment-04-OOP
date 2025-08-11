@@ -1,5 +1,5 @@
 ﻿#region part01 
-//#region Q1
+#region Q1
 //public class Calculator
 //{
 //    public int Add(int a, int b) => a + b;
@@ -8,36 +8,62 @@
 
 //    public double Add(double a, double b) => a + b;
 //}
-//#endregion
+#endregion
 #region Q2
-public class Rectangle
-{
-    public int Width { get; }
-    public int Height { get; }
+//public class Rectangle
+//{
+//    public int Width { get; }
+//    public int Height { get; }
 
-   
-    public Rectangle()
+
+//    public Rectangle()
+//    {
+//        Width = 0;
+//        Height = 0;
+//    }
+
+
+//    public Rectangle(int width, int height)
+//    {
+//        Width = width;
+//        Height = height;
+//    }
+
+
+//    public Rectangle(int side)
+//    {
+//        Width = side;
+//        Height = side;
+//    }
+//}
+#endregion
+#region Q3 
+public class ComplexNumber
+{
+    public double Real { get; }
+    public double Imaginary { get; }
+
+    public ComplexNumber(double real, double imaginary)
     {
-        Width = 0;
-        Height = 0;
+        Real = real;
+        Imaginary = imaginary;
     }
 
    
-    public Rectangle(int width, int height)
+    public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
     {
-        Width = width;
-        Height = height;
+        return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
     }
 
     
-    public Rectangle(int side)
+    public static ComplexNumber operator -(ComplexNumber c1, ComplexNumber c2)
     {
-        Width = side;
-        Height = side;
+        return new ComplexNumber(c1.Real - c2.Real, c1.Imaginary - c2.Imaginary);
     }
+
+    public override string ToString() => $"{Real} + {Imaginary}i";
 }
-#endregion
-#region
+
 #endregion
 #region
 #endregion
