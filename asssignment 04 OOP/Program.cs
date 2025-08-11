@@ -112,3 +112,20 @@ public class DerivedClass2 : BaseClass
 }
 #endregion
 #endregion
+#region part2 
+#region Q1
+public class Duration
+{
+    public int Hours { get; }
+    public int Minutes { get; }
+    public int Seconds { get; }
+
+    public Duration(int hours, int minutes, int seconds)
+    {
+        Hours = hours;
+        Minutes = minutes;
+        Seconds = seconds;
+    }
+}
+#endregion
+#endregion
