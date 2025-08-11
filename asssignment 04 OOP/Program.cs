@@ -103,5 +103,12 @@ public class DerivedClass1 : BaseClass
 }
 #endregion
 #region q5.c
+public class DerivedClass2 : BaseClass
+{
+    public new void DisplayMessage()
+    {
+        Console.WriteLine("Message from DerivedClass2 (hidden)");
+    }
+}
 #endregion
 #endregion
