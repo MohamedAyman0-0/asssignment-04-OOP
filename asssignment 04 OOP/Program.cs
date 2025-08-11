@@ -128,4 +128,49 @@ public class Duration
     }
 }
 #endregion
+#region Q2
+public class d
+{
+    public int Hours { get; }
+    public int Minutes { get; }
+    public int Seconds { get; }
+
+    public d (int hours, int minutes, int seconds)
+    {
+        Hours = hours;
+        Minutes = minutes;
+        Seconds = seconds;
+    }
+
+    public override string ToString()
+    {
+        return $"Hours: {Hours}, Minutes: {Minutes}, Seconds: {Seconds}";
+    }
+
+    public override bool Equals(object obj)
+    {
+        if (obj is not Duration other) return false;
+
+        return Hours == other.Hours
+            && Minutes == other.Minutes
+            && Seconds == other.Seconds;
+    }
+
+    public override int GetHashCode()
+    {
+        
+        return HashCode.Combine(Hours, Minutes, Seconds);
+    }
+}
+
+#endregion
+#region Q3
+
+#endregion
+#region Q4
+
+#endregion
+#region
+
+#endregion
 #endregion
