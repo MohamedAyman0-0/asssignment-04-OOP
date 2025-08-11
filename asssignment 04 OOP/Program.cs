@@ -38,34 +38,41 @@
 //}
 #endregion
 #region Q3 
-public class ComplexNumber
-{
-    public double Real { get; }
-    public double Imaginary { get; }
+//public class ComplexNumber
+//{
+//    public double Real { get; }
+//    public double Imaginary { get; }
 
-    public ComplexNumber(double real, double imaginary)
-    {
-        Real = real;
-        Imaginary = imaginary;
-    }
+//    public ComplexNumber(double real, double imaginary)
+//    {
+//        Real = real;
+//        Imaginary = imaginary;
+//    }
 
-   
-    public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
-    {
-        return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
-    }
 
-    
-    public static ComplexNumber operator -(ComplexNumber c1, ComplexNumber c2)
-    {
-        return new ComplexNumber(c1.Real - c2.Real, c1.Imaginary - c2.Imaginary);
-    }
+//    public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+//    {
+//        return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
+//    }
 
-    public override string ToString() => $"{Real} + {Imaginary}i";
-}
+
+//    public static ComplexNumber operator -(ComplexNumber c1, ComplexNumber c2)
+//    {
+//        return new ComplexNumber(c1.Real - c2.Real, c1.Imaginary - c2.Imaginary);
+//    }
+
+//    public override string ToString() => $"{Real} + {Imaginary}i";
+//}
 
 #endregion
-#region
+#region Q4.a
+public class Employee
+{
+    public virtual void Work()
+    {
+        Console.WriteLine("Employee is working");
+    }
+}
 #endregion
 #region
 #endregion
