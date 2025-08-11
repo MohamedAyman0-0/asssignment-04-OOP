@@ -75,12 +75,21 @@
 //}
 #endregion
 #region Q4.b
-public class Manager : Employee
+//public class Manager : Employee
+//{
+//    public override void Work()
+//    {
+//        base.Work();
+//        Console.WriteLine("Manager is managing");
+//    }
+//}
+#endregion
+#region Q5.a
+public class BaseClass
 {
-    public override void Work()
+    public virtual void DisplayMessage()
     {
-        base.Work();
-        Console.WriteLine("Manager is managing");
+        Console.WriteLine("Message from BaseClass");
     }
 }
 #endregion
